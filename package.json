@@ -1,0 +1,35 @@
+{
+  "name": "website-to-chrome-app",
+  "version": "0.1.0",
+  "description": "Generates Chrome Apps with a fullscreen <webview> of some url.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthias Vogt",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "compression": "^1.6.1",
+    "express": "^4.13.4",
+    "filesaver": "0.0.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-header": "latest",
+    "gulp-jshint": "latest",
+    "gulp-markdown-it": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "hbs": "^4.0.0",
+    "hint.css": "^2.2.0",
+    "jquery": "^2.2.1",
+    "jshint-stylish": "^2.1.0",
+    "nodemon": "^1.9.1",
+    "normalize.css": "^3.0.3"
+  }
+}

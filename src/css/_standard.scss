@@ -1,0 +1,44 @@
+/* Standard */
+
+body, html {
+	height: 100%; /* being able to use 'height' declared in % relative to body size */
+}
+body {
+	margin: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	/* forcing this prevents font thickness flickering in safari */
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body *, *:before, *:after {
+	margin-top: 0; /* only use margin-bottom defaults */
+}
+
+textarea {
+	resize: vertical;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p, li {
+	line-height: 1.6;
+}
+
+#browserupgrade {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: #f5f5f5;
+	padding: 1em;
+	text-align: center;
+}
+/* /Standard */

@@ -1,0 +1,16 @@
+To prettify
+ ☐ fetch icon from url favicons
+   ☐ validate if url resolving
+ ✔ build dist files @done (16-03-13 23:29)
+ ☐ beautify output code
+ ☐ make fancy placeholder default for preview instead of going all inception
+ ✔ improve preview positioning @done (16-03-13 23:29)
+   ☐ recommend custom default resolutions depending on user agent display size
+ ☐ concat scripts
+
+Features
+ ☐ Export configuration as json
+ ☐ Import json configuration
+ ☐ Add example configurations
+ ☐ Option to keep app open in the background on close
+   possible? https://developer.chrome.com/apps/manifest

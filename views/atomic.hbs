@@ -1,0 +1,54 @@
+<!doctype html>
+
+<!-- {{sourceNotice}} {{projectLink}} -->
+
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<meta name="description" content="{{description}}">
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{{#ifCond critCss '||' critJs}}
+	<!-- Critical content -->
+	{{/ifCond}}
+
+	{{#if critCss}}
+	<!-- CSS -->
+	{{>importCss critCss}}
+	{{/if}}
+
+	{{#if critJs}}
+	<!-- JS -->
+	{{>importJs critJs}}
+	{{/if}}
+</head>
+
+<body>
+
+	{{{body}}}
+
+
+	<!--[if lte IE 8]>
+		<p id="browserupgrade">
+			You are using an <b>outdated</b> browser. Please
+			<a href="http://browsehappy.com/">upgrade your browser</a> to
+			improve your experience. Web developers will thank you.
+		</p>
+	<![endif]-->
+
+	{{#ifCond css '||' js}}
+	<!-- Non-critical content -->
+	{{/ifCond}}
+	{{#if css}}
+
+	<!-- CSS -->
+	{{>importCss css}}
+	{{/if}}
+	{{#if js}}
+
+	<!-- JS -->
+	{{>importJs js}}
+	{{/if}}
+</body>

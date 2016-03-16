@@ -1,0 +1,9 @@
+{{#each this}}
+{{#if code}}
+<style{{#each attrs}} {{@key}}="{{this}}"{{/each}}>
+{{{code}}}
+</style>
+{{else if path}}
+<link{{#each attrs}} {{@key}}="{{this}}"{{/each}} rel="stylesheet" href="{{{path}}}">
+{{/if}}
+{{/each}}

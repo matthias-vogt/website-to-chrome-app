@@ -1,0 +1,9 @@
+{{#each this}}
+{{#if code}}
+<script{{#each attrs}} {{@key}}="{{this}}"{{/each}}>
+{{{code}}}
+</script>
+{{else if path}}
+<script{{#each attrs}} {{@key}}="{{this}}"{{/each}} src="{{{path}}}"></script>
+{{/if}}
+{{/each}}
