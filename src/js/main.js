@@ -109,12 +109,16 @@ var app = {
 			// update icon preview
 			$('#icon + img').attr('src', dataUri);
 
+			/*
+			// removed as images don't actually have to be 128x128
+
 			// img has to be loaded
 			var loadedIconIsValid = !iconExists ||
 				$('#icon + img').height() === 128 &&
 				$('#icon + img').width() === 128;
 
 			$('label[for="icon"] + aside')[(loadedIconIsValid ? 'remove' : 'add') + 'Class']('has-error');
+			*/
 		});
 	},
 

@@ -225,10 +225,10 @@ ul, ol {
 	display: inline-block;
 	font-size: .8em;
 	color: #555;
-	&.has-error {
-		color: red;
-		font-weight: bold;
-	}
+	// &.has-error {
+	// 	color: red;
+	// 	font-weight: bold;
+	// }
 }
 
 button {
