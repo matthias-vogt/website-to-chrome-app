@@ -8,7 +8,7 @@ a[data-hint] {
 $blue: #28A1FF;
 $text: #303030;
 $bodyBg: white;
-$mainMaxWidth: 29em;
+$mainMaxWidth: 29rem;
 $hiddenPreviewBreakpoint: 1100px;
 //needs to be in px (instead of em) because of preview window size being in px
 
@@ -357,11 +357,17 @@ button {
 				width: 100vw;
 				position: absolute;
 				top: 0;
-				left: 0;
 				left: calc(-50vw + #{$mainMaxWidth}/2);
 				z-index: -1;
 				/* padding: 1em; */
 			}
+		}
+		body {
+			overflow-x: hidden;
+			/*
+				dirty hack to make 100vw not cause horizontal overflow if
+				vertical scrollbar is present
+			 */
 		}
 	}
 }
