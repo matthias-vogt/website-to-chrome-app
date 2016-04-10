@@ -6,7 +6,6 @@ module.exports = function(express, app) {
 
 		var context = app.get('context');
 
-		context.loadFrame = req.query.loadFrame === undefined
 		context.critCss = [{
 			code: fs.readFileSync(__dirname + '/../' + app.get('static') + '/css/main.css', 'utf8')
 		}];
