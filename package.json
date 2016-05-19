@@ -3,7 +3,6 @@
   "description": "Generates Chrome Apps with a fullscreen <webview> of some url.",
   "version": "0.1.0",
   "author": "Matthias Vogt",
-  "homepage": "https://github.com/matthias-vogt/website-to-chrome-app",
   "dependencies": {
     "compression": "^1.6.1",
     "express": "^4.13.4",
@@ -29,6 +28,7 @@
     "jshint-stylish": "^2.1.0",
     "nodemon": "^1.9.1"
   },
+  "homepage": "https://github.com/matthias-vogt/website-to-chrome-app",
   "license": "ISC",
   "main": "app.js",
   "scripts": {
